@@ -79,10 +79,8 @@ resource "aws_iam_policy" "eks-oidc-policy" {
 
   policy = jsonencode({
     Statement = [{
-      Action = [
-        "s3:*"
-      ]
-      Effect   = "Allow"
+      Action  = "s3:*"
+      Effect  = "Allow"
       Resource = "*"
     }]
     Version = "2012-10-17"
