@@ -1,5 +1,5 @@
 locals {
-  org = "ap-medium"
+  org = "ch-medium"
   env = var.env
 }
 
